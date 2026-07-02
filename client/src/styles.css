@@ -1,0 +1,51 @@
+body {
+    background-color: #ecc689;
+    font-family: "Georgia", serif;
+    
+}
+
+h1 {
+    color: #f5f4f8;
+    text-align: center;
+    font-size: 72px;
+    text-shadow: 10px 10px 8px rgba(0, 0, 0, 0.5);
+    border: 8px solid white;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: inline-block;
+    padding: 8px;
+}
+
+p {
+    color: #fbfbfb;
+    text-align: center;
+    font-size: 48px;
+    text-shadow: 6px 6px 8px rgba(0, 0, 0, 0.5);
+    padding-top: 156px;
+   
+}
+
+.top-banner {
+    background-image: url("baseballian.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 400px; 
+    padding-top: 120px;
+    text-align: center;
+}
+
+.tracker-button {
+  display: inline-block;
+  padding: 12px 24px;
+  background-color: #202123;
+  color: white;
+  text-decoration: none;
+  border-radius: 6px;
+  font-weight: 600;
+  margin-top: 16px;
+  transition: background-color 0.2s ease;
+}
+
+.tracker-button:hover {
+  background-color: #000000;
+}

@@ -1,0 +1,215 @@
+.stadium-tracker {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 8px;
+  font-family: "Georgia", serif;
+  color: #222;
+}
+
+.tracker-header {
+  text-align: center;
+  margin-bottom: 8px;
+}
+
+.tracker-header h1 {
+  margin-bottom: 6px;
+  font-size: 60px;
+}
+
+.tracker-header p {
+  color: #ffffff;
+  padding-top: 0;
+  margin-top: 0;
+}
+
+.tracker-summary {
+  display: flex;
+  gap: 16px;
+  justify-content: center;
+  margin-bottom: 20px;
+  flex-wrap: wrap;
+}
+
+.summary-card {
+  background: #f3f3f3;
+  border-radius: 12px;
+  padding: 24px;
+  text-align: center;
+  width: 160px;
+  height: 160px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  box-sizing: border-box;
+  overflow: hidden;
+  align-items: center;
+}
+
+.summary-card h2 {
+  margin: 0;
+  font-size: 56px;
+  text-align: center;
+}
+
+.summary-card p {
+  margin: 6px 0 0;
+  color: #555;
+  font-size: 24px;
+  padding-top: 0;
+  text-align: center;
+}
+
+.progress-bar {
+  width: 100%;
+  height: 46px;
+  background: #ddd;
+  border-radius: 20px;
+  overflow: hidden;
+  margin-bottom: 24px;
+}
+
+.progress-fill {
+  height: 100%;
+  background: #2d7d46;
+  transition: width 0.3s ease;
+}
+
+.tracker-controls {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr auto;
+  gap: 12px;
+  margin-bottom: 24px;
+}
+
+.tracker-controls input,
+.tracker-controls select,
+.reset-button {
+  padding: 10px;
+  font-size: 15px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+}
+
+.reset-button {
+  background: #6f2e29;
+  color: white;
+  cursor: pointer;
+  border: none;
+}
+
+.reset-button:hover {
+  background: #8f1d14;
+}
+
+.stadium-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 18px;
+}
+
+.stadium-card {
+  border: 1px solid #ddd;
+  border-radius: 14px;
+  padding: 18px;
+  background: white;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+}
+
+.stadium-card.visited {
+  border-color: #2d7d46;
+  background: #f1fff5;
+}
+
+.stadium-card-header {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+  align-items: flex-start;
+  margin-bottom: 12px;
+}
+
+.stadium-card-header > div {
+  width: 100%;
+}
+
+.stadium-title-block {
+  flex: 1;
+  min-width: 0;
+}
+
+.stadium-card h3 {
+  margin: 0;
+  font-size: 13px;
+  word-break: break-word;
+  overflow-wrap: break-word;
+  text-align: left;
+}
+
+.stadium-card-header p {
+  margin: 4px 0 0;
+  color: #666;
+  text-align: center;
+  font-size: 38px;
+}
+
+.visited-checkbox {
+  position: absolute;
+  display: flex;
+  top: 0;
+  right: 0;
+  gap: 6px;
+  align-items: stretch - right;
+  font-size: 14px;
+  white-space: nowrap;
+  padding-left: 8px;
+}
+
+.stadium-details {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.stadium-details p {
+  margin: 0;
+  font-size: 42px;
+  color: #8f1d14;
+}
+
+.stadium-card textarea {
+  width: 80%;              /* or any width less than 100% */
+  max-width: 300px;        /* optional cap */
+  display: block;          /* required for margin: auto to work on a textarea */
+  margin: 12px auto 0;     /* auto left/right centers it, 12px keeps top spacing */
+  padding: 10px;
+  font-family: "Georgia", serif;
+  font-size: 14px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  resize: vertical;
+  text-align: center;
+}
+
+.no-results {
+  text-align: center;
+  font-size: 18px;
+  color: #777;
+  margin-top: 32px;
+}
+
+@media (max-width: 750px) {
+  .tracker-controls {
+    grid-template-columns: 1fr;
+  }
+
+  .tracker-header h1 {
+    font-size: 28px;
+  }
+}
+
+.home-link {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+}
