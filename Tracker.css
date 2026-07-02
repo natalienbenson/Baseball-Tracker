@@ -1,0 +1,167 @@
+.stadium-tracker {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 24px;
+  font-family: Arial, sans-serif;
+  color: #222;
+}
+
+.tracker-header {
+  text-align: center;
+  margin-bottom: 24px;
+}
+
+.tracker-header h1 {
+  margin-bottom: 8px;
+  font-size: 36px;
+}
+
+.tracker-header p {
+  color: #666;
+}
+
+.tracker-summary {
+  display: flex;
+  gap: 16px;
+  justify-content: center;
+  margin-bottom: 20px;
+  flex-wrap: wrap;
+}
+
+.summary-card {
+  background: #f3f3f3;
+  border-radius: 12px;
+  padding: 18px 28px;
+  text-align: center;
+  min-width: 140px;
+}
+
+.summary-card h2 {
+  margin: 0;
+  font-size: 32px;
+}
+
+.summary-card p {
+  margin: 6px 0 0;
+  color: #555;
+}
+
+.progress-bar {
+  width: 100%;
+  height: 18px;
+  background: #ddd;
+  border-radius: 20px;
+  overflow: hidden;
+  margin-bottom: 24px;
+}
+
+.progress-fill {
+  height: 100%;
+  background: #2d7d46;
+  transition: width 0.3s ease;
+}
+
+.tracker-controls {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr auto;
+  gap: 12px;
+  margin-bottom: 24px;
+}
+
+.tracker-controls input,
+.tracker-controls select,
+.reset-button {
+  padding: 10px;
+  font-size: 15px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+}
+
+.reset-button {
+  background: #b42318;
+  color: white;
+  cursor: pointer;
+  border: none;
+}
+
+.reset-button:hover {
+  background: #8f1d14;
+}
+
+.stadium-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 18px;
+}
+
+.stadium-card {
+  border: 1px solid #ddd;
+  border-radius: 14px;
+  padding: 18px;
+  background: white;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+}
+
+.stadium-card.visited {
+  border-color: #2d7d46;
+  background: #f1fff5;
+}
+
+.stadium-card-header {
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+  align-items: flex-start;
+  margin-bottom: 12px;
+}
+
+.stadium-card h3 {
+  margin: 0;
+  font-size: 20px;
+}
+
+.stadium-card-header p {
+  margin: 4px 0 0;
+  color: #666;
+}
+
+.visited-checkbox {
+  display: flex;
+  gap: 6px;
+  align-items: center;
+  font-size: 14px;
+  white-space: nowrap;
+}
+
+.stadium-details p {
+  margin: 6px 0;
+}
+
+.stadium-card textarea {
+  width: 100%;
+  min-height: 70px;
+  margin-top: 12px;
+  padding: 10px;
+  font-family: Arial, sans-serif;
+  font-size: 14px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  resize: vertical;
+}
+
+.no-results {
+  text-align: center;
+  font-size: 18px;
+  color: #777;
+  margin-top: 32px;
+}
+
+@media (max-width: 750px) {
+  .tracker-controls {
+    grid-template-columns: 1fr;
+  }
+
+  .tracker-header h1 {
+    font-size: 28px;
+  }
+}
