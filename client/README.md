@@ -35,18 +35,6 @@ A React-powered web application for tracking visits to Major League Baseball sta
    npm run dev
 ```
 
-### Install dependencies
-
-```bash
-npm install
-```
-
-### Start the development server
-
-```bash
-npm run dev
-```
-
 ### Build for production
 
 ```bash
