@@ -19,7 +19,21 @@ A React-powered web application for tracking visits to Major League Baseball sta
 - JavaScript
 - CSS
 
-## Getting Started
+## Running Locally
+
+1. Clone the repo
+```
+   git clone https://github.com/natalienbenson/Baseball-Tracker.git
+   cd Baseball-Tracker/client
+```
+2. Install dependencies
+```
+   npm install
+```
+3. Start the app
+```
+   npm run dev
+```
 
 ### Install dependencies
 
